@@ -45,8 +45,9 @@ fun CameraPermissionScreen(modifier: Modifier = Modifier) {
     ) {
         if (hasPermission) {
             Text(text = "✅ CAMERA 權限已取得")
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)  //啟動相機
-            context.startActivity(intent)
+            //val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)  //啟動相機
+            //context.startActivity(intent)
+            PreviewScreen(modifier)
         } else {
             Text(text = "❌ 尚未取得 CAMERA 權限")
             Spacer(modifier = Modifier.height(8.dp))

@@ -60,4 +60,17 @@ dependencies {
 
     implementation("com.google.accompanist:accompanist-permissions:0.37.3")  //確保使用最新版
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2") //請確認最新版
+
+    val cameraxVersion = "1.5.2" // 請檢查最新的穩定版本
+    implementation("androidx.camera:camera-core:$cameraxVersion")
+    implementation("androidx.camera:camera-camera2:$cameraxVersion")
+    // CameraX Lifecycle - 用於將 CameraX 綁定到 Activity/Fragment 的生命週期
+    implementation("androidx.camera:camera-lifecycle:$cameraxVersion")
+    // CameraX View - 包含 PreviewView，用於顯示相機預覽
+    implementation("androidx.camera:camera-view:$cameraxVersion")
+    // CameraX Extensions (可選) - 用於啟用特殊效果，如 HDR, 夜間模式等，需要裝置支援
+    implementation("androidx.camera:camera-extensions:$cameraxVersion")
+    // CameraX VideoCapture (可選) - 用於錄影功能
+    implementation("androidx.camera:camera-video:$cameraxVersion")
+
 }
