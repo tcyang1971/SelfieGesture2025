@@ -57,4 +57,7 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    implementation("com.google.accompanist:accompanist-permissions:0.37.3")  //確保使用最新版
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2") //請確認最新版
 }
